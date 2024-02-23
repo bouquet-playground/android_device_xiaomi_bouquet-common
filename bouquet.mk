@@ -489,5 +489,10 @@ PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
 PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
 USE_DEX2OAT_DEBUG := false
 
+
+# Updatable Apex
+OVERRIDE_PRODUCT_COMPRESSED_APEX := false
+$(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
+
 # Inherit the proprietary files
 $(call inherit-product, vendor/xiaomi/bouquet-common/bouquet-common-vendor.mk)
