@@ -59,9 +59,6 @@ BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 TARGET_KERNEL_SOURCE := kernel/xiaomi/sdm660
 TARGET_KERNEL_VERSION := 4.19
 
-# Include the Prebuilt Kernels
-include device/xiaomi/bouquet-kernels/BoardConfigKernel.mk
-
 # QCOM hardware
 BOARD_USES_QCOM_HARDWARE := true
 
@@ -90,7 +87,7 @@ TARGET_USES_ION := true
 # DT2W
 TARGET_TAP_TO_WAKE_NODE := "/sys/touchpanel/double_tap"
 
-# FM
+ FM
 ifeq ($(BOARD_HAVE_QCOM_FM),true)
 AUDIO_FEATURE_ENABLED_FM_POWER_OPT := true
 BOARD_HAS_QCA_FM_SOC := cherokee
