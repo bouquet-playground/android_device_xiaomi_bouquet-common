@@ -56,6 +56,9 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
+# Add common definitions for Qualcomm
+$(call inherit-product, hardware/qcom-caf/common/common.mk)
+
 # Speed up apps
 PRODUCT_DEXPREOPT_SPEED_APPS += \
     Settings \
