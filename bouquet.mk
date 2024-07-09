@@ -80,7 +80,8 @@ PRODUCT_PACKAGES += \
     audio.bluetooth.default \
     audio.primary.sdm660 \
     audio.r_submix.default \
-    audio.usb.default
+    audio.usb.default \
+    libaudioroute.vendor
 
 PRODUCT_PACKAGES += \
     liba2dpoffload \
@@ -224,7 +225,8 @@ endif
 
 # Gatekeeper
 PRODUCT_PACKAGES += \
-    android.hardware.gatekeeper@1.0.vendor
+    android.hardware.gatekeeper@1.0.vendor \
+    libion.vendor
 
 # GNSS
 PRODUCT_PACKAGES += \
@@ -260,6 +262,7 @@ PRODUCT_PACKAGES += \
     android.hidl.base@1.0 \
     android.hidl.base@1.0.vendor \
     android.hidl.memory@1.0.vendor \
+    libhidlmemory.vendor \
     libhidltransport \
     libhidltransport.vendor \
     libhwbinder \
@@ -408,6 +411,7 @@ PRODUCT_PACKAGES += \
     libavservices_minijail.vendor \
     libprotobuf-cpp-full \
     librmnetctl \
+    libsqlite.vendor:64 \
     rild
 
 PRODUCT_PACKAGES += \
