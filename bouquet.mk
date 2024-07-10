@@ -211,6 +211,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.3-service.xiaomi
 
+PRODUCT_PACKAGES += \
+    liblzma.vendor
+
 # Fastbootd
 PRODUCT_PACKAGES += \
     fastbootd
