@@ -1,54 +1,34 @@
-<?xml version="2.0" encoding="UTF-8"?>
-<compatibility-matrix version="2.0" type="framework">
-   <hal format="hidl">
+<?xml version="1.0" encoding="utf-8"?>
+<compatibility-matrix version="5.0" type="framework">
+    <hal format="hidl" optional="false">
         <name>android.hardware.audio.effect</name>
-        <transport>hwbinder</transport>
         <version>5.0</version>
         <interface>
             <name>IEffectsFactory</name>
             <instance>default</instance>
         </interface>
-   </hal>
-    <hal format="hidl">
-        <name>android.hardware.audio</name>
-        <transport>hwbinder</transport>
-        <version>5.0</version>
-        <interface>
-            <name>IDevicesFactory</name>
-            <instance>default</instance>
-        </interface>
-   </hal>
-    <hal format="hidl">
-        <name>android.hardware.light</name>
-        <transport>hwbinder</transport>
-        <version>2.0</version>
-        <interface>
-            <name>ILight</name>
-            <instance>default</instance>
-        </interface>
-   </hal>
-    <hal format="hidl">
-        <name>android.hardware.audio</name>
-        <transport>hwbinder</transport>
-        <version>5.0</version>
-        <interface>
-            <name>IDevicesFactory</name>
-            <instance>default</instance>
-        </interface>
-   </hal>   
+    </hal>
     <hal format="hidl" optional="false">
-        <name>com.dsi.ant</name>
-        <version>1.0</version>
+        <name>android.hardware.audio</name>
+        <version>5.0</version>
         <interface>
-            <name>IAnt</name>
+            <name>IDevicesFactory</name>
             <instance>default</instance>
         </interface>
     </hal>
     <hal format="hidl" optional="false">
-        <name>android.hardware.radio.config</name>
-        <version>1.2</version>
+        <name>android.hardware.gnss</name>
+        <version>1.0</version>
         <interface>
-            <name>IRadioConfig</name>
+            <name>IGnss</name>
+            <instance>gnss_vendor</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="false">
+        <name>android.hardware.light</name>
+        <version>2.0</version>
+        <interface>
+            <name>ILight</name>
             <instance>default</instance>
         </interface>
     </hal>
@@ -57,6 +37,14 @@
         <version>1.0</version>
         <interface>
             <name>IGoodixBiometricsFingerprint</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="false">
+        <name>android.hardware.radio.config</name>
+        <version>1.2</version>
+        <interface>
+            <name>IRadioConfig</name>
             <instance>default</instance>
         </interface>
     </hal>
