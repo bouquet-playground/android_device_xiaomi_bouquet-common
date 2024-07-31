@@ -34,29 +34,24 @@ TARGET_2ND_CPU_VARIANT := generic
 TARGET_2ND_CPU_VARIANT_RUNTIME := cortex-a73
 
 # Kernel
+include device/xiaomi/bouquet-kernel/BoardConfigKernel.mk
 BOARD_KERNEL_CMDLINE := \
-    androidboot.boot_devices=soc/c0c4000.sdhci \
-    androidboot.configfs=true \
     androidboot.hardware=qcom \
-    androidboot.usbcontroller=a800000.dwc3 \
-    androidboot.super_partition=system \
-    ehci-hcd.park=3 \
-    loop.max_part=7 \
-    lpm_levels.sleep_disabled=1 \
+    user_debug=31 \
     msm_rtb.filter=0x37 \
-    printk.devkmsg=on \
-    sched_enable_hmp=1 \
+    ehci-hcd.park=3 \
+    lpm_levels.sleep_disabled=1 \
     sched_enable_power_aware=1 \
     service_locator.enable=1 \
-    usbcore.autosuspend=7 \
-    user_debug=31 \
-    cgroup_disable=pressure \
-    androidboot.verifiedbootstate=green
+    androidboot.configfs=true \
+    androidboot.verifiedbootstate=green \
+    androidboot.usbcontroller=a800000.dwc3 \
+    loop.max_part=7 \
+    cgroup_disable=pressure
 
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_PAGESIZE := 4096
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
-TARGET_KERNEL_SOURCE := kernel/xiaomi/sdm660
 TARGET_KERNEL_VERSION := 4.19
 
 # QCOM hardware
