@@ -195,11 +195,7 @@ PRODUCT_PACKAGES += \
     libtinyxml \
     vendor.display.config@1.9 \
     vendor.display.config@2.0
-
-# Doze
-PRODUCT_PACKAGES += \
-    XiaomiParts
-
+    
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm-service.clearkey
