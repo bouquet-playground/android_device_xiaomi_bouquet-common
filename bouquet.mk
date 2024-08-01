@@ -427,9 +427,6 @@ PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     hardware/xiaomi
 
-# Utils
-$(call inherit-product, $(LOCAL_PATH)/utils.mk)
-
 # Telephony
 PRODUCT_PACKAGES += \
     ims-ext-common \
