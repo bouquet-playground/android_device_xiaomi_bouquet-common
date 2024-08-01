@@ -242,6 +242,11 @@ PRODUCT_PACKAGES += \
     libsensorndkbridge \
     libwifi-hal-ctrl
 
+# HALs
+PRODUCT_USES_QCOM_HARDWARE := true
+PRODUCT_BOARD_PLATFORM := sdm660
+OVERRIDE_QCOM_HARDWARE_VARIANT := sdm660
+
 # Health
 PRODUCT_PACKAGES += \
     android.hardware.health-service.qti 
